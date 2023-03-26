@@ -19,24 +19,18 @@
 
 // export default Projects;
 import React from 'react';
-import uniqid from 'uniqid';
-import { projects } from '../../Portfolio.js';
+import  Project  from '../../components/Portfolio';
 import ProjectContainer from './projectContainer';
 import './projects.css';
 
 const Projects = () => {
-  if (!projects.length) return null;
 
   return (
     <section id='projects' className='projects section'>
       <div className='container'>
         <h2 className='section__title'>Projects</h2>
         <div className='row'>
-          {projects.map((project) => (
-            <div key={uniqid()} className='col-md-6 mb-4'>
-              <ProjectContainer project={project} />
-            </div>
-          ))}
+          <Project/>
         </div>
       </div>
     </section>

@@ -1,0 +1,11 @@
+.navitems {
+    color: var(--clr-primary);
+    text-decoration: none;
+    margin: 10px;
+}
+
+.navitemsAct{
+    color: var(--clr-fg);
+    text-decoration: none;
+    margin: 10px;
+}

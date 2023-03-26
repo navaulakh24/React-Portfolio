@@ -41,7 +41,7 @@ function Header({ currentPage, handlePageChange }) {
               </a>
             </li>
             <li className="nav-item">
-              <a href="https://drive.google.com/file/d/1SZAXvvPk_i8lrzt4VefcpWjgfGep0pra/view?usp=share_link" className={isActive('Contact')}>
+              <a href="" className={isActive('Contact')}>
                 Resume
               </a>
             </li>
