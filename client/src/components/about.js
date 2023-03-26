@@ -12,8 +12,6 @@
 
 // export default About; 
 import React from 'react';
-import '../About/about.css';
-// import profileImage from '';
 
 function About() {
   return (

@@ -15,7 +15,6 @@
 // export default Header;
 
 import React from "react";
-import './Header.css';
 
 function Header({ currentPage, handlePageChange }) {
   const isActive = (page) => page === currentPage ? 'active navitems' : 'navitemsAct';

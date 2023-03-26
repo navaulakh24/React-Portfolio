@@ -1,35 +1,29 @@
-import React, { useState } from 'react';
-import Header from './Header/Header.js';
-import Footer from './Footer/Footer.js';
-import About from '../pages/About/about.js';
-import Contact from '../pages/Contact/contact.js';
-import Projects from '../pages/Projects/projects.js';
+import React from "react";
+import PropTypes from 'prop-types';
 
-function ProjectContainer() {
-    const [currentPage, setCurrentPage] = useState('About');
+const ProjectContainer = ({ project }) => {
+  const { name, image, description, github, deployed } = project;
 
-    const renderPage = () => {
-        switch (currentPage) {
-            case 'About':
-                return <About />;
-            case 'Projects':
-                return <Projects />;
-            case 'Contact':
-                return <Contact />;
-            default:
-                return null;
-        }
-    };
 
-    const handlePageChange = (page) => setCurrentPage(page);
+  return (
+    <div className='project'>
+      <img className='proImage' src={image} alt="Project logo" />
+      <h3 className="project_name">{name}</h3>
+      <p className='project__description'>{description}</p>
+      <a href={github} target="_blank" rel="noreferrer"> Github</a>
+      <a href={deployed} target="_blank" rel="noreferrer"> Deployed</a>
+    </div>
+  );
+};
 
-    return (
-        <div>
-            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
-            <Footer />
-        </div>
-    );
+ProjectContainer.propTypes = {
+  project: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    github: PropTypes.string,
+    deployed: PropTypes.string,
+  }).isRequired,
 };
 
 export default ProjectContainer;

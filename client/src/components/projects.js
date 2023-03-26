@@ -19,9 +19,8 @@
 
 // export default Projects;
 import React from 'react';
-import  Project  from '../../components/Portfolio';
-import ProjectContainer from './projectContainer';
-import './projects.css';
+import  Project  from './Portfolio';
+// import ProjectContainer from './ProjectContainer';
 
 const Projects = () => {
 

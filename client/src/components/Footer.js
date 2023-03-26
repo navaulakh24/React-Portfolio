@@ -27,7 +27,7 @@ function Footer() {
     <footer>
       <p>Developer's Name</p>
       <ul>
-        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://github.com/navaulakh24">GitHub</a></li>
         <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
         <li><a href="#">Third Platform</a></li>
       </ul>
