@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
-import About from '../pages/About';
-import Contact from '../pages/Contact';
-import Projects from '../pages/Projects';
+import Header from './Header/Header.js';
+import Footer from './Footer/Footer.js';
+import About from '../pages/About/about.js';
+import Contact from '../pages/Contact/contact.js';
+import Projects from '../pages/Projects/projects.js';
 
 function ProjectContainer() {
     const [currentPage, setCurrentPage] = useState('About');

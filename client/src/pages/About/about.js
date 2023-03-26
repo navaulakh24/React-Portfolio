@@ -12,14 +12,14 @@
 
 // export default About; 
 import React from 'react';
-import './About.css';
-import profileImage from '../../../Assets/Images/profile-image.jpg';
+import '../About/about.css';
+// import profileImage from '';
 
 function About() {
   return (
     <div className="about">
       <div className="about__header">
-        <img className='about__profile-image' src={profileImage} alt="Profile" />
+        {/* <img className='about__profile-image' src={profileImage} alt="Profile" /> */}
         <h1 className='about__title'>Navdeep Aullakh</h1>
         <p className='about__subtitle'>Full-Stack Developer</p>
       </div>

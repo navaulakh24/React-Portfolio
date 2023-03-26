@@ -20,9 +20,9 @@
 // export default Projects;
 import React from 'react';
 import uniqid from 'uniqid';
-import { projects } from '../../data/projects';
-import ProjectContainer from './ProjectContainer';
-import './Projects.css';
+import { projects } from '../../Portfolio.js';
+import ProjectContainer from './projectContainer';
+import './projects.css';
 
 const Projects = () => {
   if (!projects.length) return null;

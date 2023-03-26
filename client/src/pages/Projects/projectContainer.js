@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import './ProjectContainer.css';
+import '.././Projects/projects.css';
 
 const ProjectContainer = ({ project }) => {
   const { image, name, description, stack, sourceCode, livePreview } = project;
