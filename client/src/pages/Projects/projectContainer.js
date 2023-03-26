@@ -1,31 +1,47 @@
 import React from "react";
-import uniqid from "uniqid";
-import './projectContainer.css';
+import PropTypes from 'prop-types';
+import './ProjectContainer.css';
 
-const ProjectContainer = ({project}) => (
+const ProjectContainer = ({ project }) => {
+  const { image, name, description, stack, sourceCode, livePreview } = project;
+
+  const renderStack = () => (
+    <ul className='project__stack'>
+      {stack.map((item) => (
+        <li key={item} className='project__stack-item'>
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+
+  const renderLink = (url, label, icon) => (
+    <a href={url} aria-label={label} className='link link--icon'>
+      <i className={icon}></i>
+    </a>
+  );
+
+  return (
     <div className='project'>
-        <img className='project-image' src={project.image} alt="logo" />
-        <h3 className='project-name'>{project.name}</h3>
-        <p className='project-description'>{project.description}</p>
-        {project.stack && (
-            <ul className='project-stack'>
-                {project.stack.map((tech) => (
-                    <li key={uniqid()} className='project-stack-item'>{item}</li>
-                ))}
-            </ul>
-        )}
-        {project.sourceCode && (
-            <a href={project.sourceCode} aria-label= 'source code' className='link link--icon'>
-                <a href={project.sourceCode}><i class='fab fa-github social-icon'></i></a>
-            </a>
-        )}
-        {project.livePreview && (
-            <a href={project.livePreview} aria-label= 'live preview' className='link link--icon'>
-                <a href={project.livePreview}>
-                    <i class='fab fa-desktop social-icon'></i></a>
-                </a>
-        )}
+      <img className='proImage' src={image} alt="Project logo" />
+      <h3 className="project_name">{name}</h3>
+      <p className='project__description'>{description}</p>
+      {stack && renderStack()}
+      {sourceCode && renderLink(sourceCode, 'Source code', 'fab fa-github social-icon')}
+      {livePreview && renderLink(livePreview, 'Live preview', 'fab fa-desktop social-icon')}
     </div>
-)
+  );
+};
+
+ProjectContainer.propTypes = {
+  project: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    stack: PropTypes.arrayOf(PropTypes.string),
+    sourceCode: PropTypes.string,
+    livePreview: PropTypes.string,
+  }).isRequired,
+};
 
 export default ProjectContainer;
