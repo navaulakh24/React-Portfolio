@@ -1,17 +1,4 @@
-// import React from 'react';
-
-// function About() {
-//   return (
-//     <section id="about">
-//       <h2>About Me</h2>
-//       <img src="developer_photo.jpg" alt="Developer Photo" />
-//       <p>Short bio about the developer.</p>
-//     </section>
-//   );
-// }
-
-// export default About; 
-import React from 'react';
+ import React from 'react';
 
 function About() {
   return (

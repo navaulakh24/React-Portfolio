@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectContainer from './ProjectContainer';
 
 export default function Project() {
     const projectArray = [
@@ -38,10 +39,7 @@ export default function Project() {
             </div>
             {projectArray.map((project) => {
                 return (
-                    <div>
-                    <div>{project.name}</div>
-                    <div>{project.description}</div>
-                    </div>
+                    <ProjectContainer project={project}/>
                 )
             }
 

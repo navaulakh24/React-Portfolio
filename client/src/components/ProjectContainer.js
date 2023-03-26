@@ -16,14 +16,4 @@ const ProjectContainer = ({ project }) => {
   );
 };
 
-ProjectContainer.propTypes = {
-  project: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    github: PropTypes.string,
-    deployed: PropTypes.string,
-  }).isRequired,
-};
-
 export default ProjectContainer;

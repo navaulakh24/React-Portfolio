@@ -1,6 +1,6 @@
 import React from 'react';
-import About from '../pages/About/about.js';
-import Contact from '../pages/Contact/contact.js';
+import About from './about.js';
+import Contact from './contact.js';
 import Projects from './projects.js';
 
 const Page = ({currentPage}) => {
