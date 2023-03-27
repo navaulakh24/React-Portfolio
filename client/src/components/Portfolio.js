@@ -1,63 +1,9 @@
-// import React from 'react';
-// import ProjectContainer from './ProjectContainer';
-
-// const styles = {
-//     container: {
-//       display: 'flex',
-//       flexDirection: 'column',
-//       alignItems: 'center',
-//       marginTop: '50px'
-//     }
-//   }
-// export default function Project() {
-//     const projectArray = [
-//         {
-//             name: "Space Quest",
-//             image: "deuheh",
-//             description: "This was the first project in my bootcamp",
-//             github: "https://github.com/Connor812/Space-Quest",
-//             deployed: "https://connor812.github.io/Space-Quest/",
-//         },
-//         {
-//             name: "Freshest Tomatoes",
-//             image: "deuheh",
-//             description: "This was my second project in the bootcamp",
-//             github: "https://github.com/porteous89/project-2-fresh-tomatoes",
-//             deployed: "https://project-2-fresh-tomatoes.herokuapp.com/",
-//         },
-//         {
-//             name: "Demo Portfolio",
-//             image: "deuheh",
-//             description: "This is the first version of my bootcamp portfolio",
-//             github: "https://github.com/navaulakh24/My-Profile",
-//             deployed: "https://navaulakh24.github.io/My-Profile/",
-//         },
-//         {
-//             name: "My Text Editor",
-//             image: "deuheh",
-//             description: "This was my second project in the bootcamp",
-//             github: "https://github.com/navaulakh24/PWA-Text-Editor",
-//             deployed: "https://damp-headland-65466.herokuapp.com/",
-//         },
-//     ];
-//     return (
-//         <div style={styles.container}>
-//           <h1>Project</h1>
-//           {projectArray.map((project) => {
-//             return (
-//               <ProjectContainer project={project} />
-//             )
-//           })}
-//         </div>
-//       );
-    
-//     }
-
 import React from 'react';
-import img1 from '../assets/img/portfolio/portfolio-1.jpg';
-import img2 from '../assets/img/portfolio/portfolio-2.jpg';
-import img3 from '../assets/img/portfolio/portfolio-3.jpg';
-import img4 from '../assets/img/portfolio/portfolio-4.jpg';
+import img1 from '../assets/img/portfolio/Screenshot (44).png';
+import img2 from '../assets/img/portfolio/Screenshot (43).png';
+import img3 from '../assets/img/portfolio/Screenshot (2).png';
+import img4 from '../assets/img/portfolio/Screenshot (42).png';
+// import img5 from '../assets/img/portfolio/Screenshot (27).png'
 
 export default function Portfolio() {   
 
@@ -94,7 +40,15 @@ export default function Portfolio() {
       image:img4,
       github: "https://github.com/navaulakh24/PWA-Text-Editor",
       deployed: "https://damp-headland-65466.herokuapp.com/",
-    }
+    },
+    // {
+    //   id:5,
+    //   name:"PWA-Text-Editor",
+    //   description:"This was a challenge project in the bootcamp",
+    //   image:img5,
+    //   github:'' ,
+    //   deployed: "",
+    // }
   ]
     return(
         <section id="portfolio" class="portfolio">
@@ -102,7 +56,6 @@ export default function Portfolio() {
     
           <div class="section-title">
             <h2>Portfolio</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
     
           <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
