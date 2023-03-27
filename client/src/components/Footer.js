@@ -24,14 +24,22 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer>
-      <p>Developer's Name</p>
-      <ul>
-        <li><a href="https://github.com/navaulakh24">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-        <li><a href="#">Third Platform</a></li>
-      </ul>
-    </footer>
+    <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Navdeep Aulakh</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+    // <footer>
+    //   <p>Developer's Name</p>
+    //   <ul>
+    //     <li><a href="https://github.com/navaulakh24">GitHub</a></li>
+    //     <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+    //     <li><a href="#">Third Platform</a></li>
+    //   </ul>
+    // </footer>
   );
 }
 
