@@ -1,54 +1,24 @@
-// import React from 'react';
-// import Navigation from '../Navigation';
-
-// function Header() {
-//     return (
-//         <div>
-//             <div>
-//                 <h1>Nav Aulakh</h1>
-//             </div>
-//             <Navigation></Navigation>
-//         </div>
-//     );
-// }
-
-// export default Header;
-
 import React from "react";
 
 function Header({ currentPage, handlePageChange }) {
-  const isActive = (page) => page === currentPage ? 'active navitems' : 'navitemsAct';
-
+ // const isActive = (page) => page === currentPage ? 'active' : '';
+      //class="fixed-top"
   return (
-    <div className="main-container">
-      <div className="container">
-        <nav className="d-flex justify-content-center py-3" id="sideNav">
-          <ul className="nav">
-            <li className="nav-item">
-              <a href="#home" onClick={() => handlePageChange('About')} className={isActive('About')}>
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#projects" onClick={() => handlePageChange('Projects')} className={isActive('Projects')}>
-                Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#contact" onClick={() => handlePageChange('Contact')} className={isActive('Contact')}>
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="" className={isActive('Contact')}>
-                Resume
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <header id="header" >
+    <div class="container-fluid d-flex justify-content-start align-items-center">
+      <h1 class="logo me-auto me-lg-0 display-inline"><a href="/">Navdeep Aulakh</a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="active" href="#about">About Me</a></li>
+          <li><a  href="#portfolio">Portfolio</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
       </div>
-    </div>
-  );
+  </header>
+ );
 }
 
 export default Header;
