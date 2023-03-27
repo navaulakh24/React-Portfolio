@@ -53,90 +53,81 @@
     
 //     }
 
-    import React from 'react';
-    export default function Portfolio() {   
-        
-        return(
-            <section id="portfolio" class="portfolio">
-            <div class="container" data-aos="fade-up">
-        
-              <div class="section-title">
-                <h2>Portfolio</h2>
-                <p>I am a Full Stack Web Developer who uses technologies such as HTML, CSS, JavaScript, Web 3rd party and Server side APIs, NodeJS, Express, SQL, ORM, MVC, noSQL, PWA, React, MERN, and State as my tech stack.</p>
-              </div>
-        
-              {/* <div class="row" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-12 d-flex justify-content-center">
-                  <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">App</li>
-                    <li data-filter=".filter-card">Card</li>
-                    <li data-filter=".filter-web">Web</li>
-                  </ul>
-                </div>
-              </div> */}
-        
-              <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+import React from 'react';
+import img1 from '../assets/img/portfolio/portfolio-1.jpg';
+import img2 from '../assets/img/portfolio/portfolio-2.jpg';
+import img3 from '../assets/img/portfolio/portfolio-3.jpg';
+import img4 from '../assets/img/portfolio/portfolio-4.jpg';
+
+export default function Portfolio() {   
+
+  let projects = [
+    {
+      id:1,
+      name:"Space-Quest",
+      description:"This was the first project in my bootcamp",
+      image:img1,
+      github: "https://github.com/Connor812/Space-Quest",
+      deployed: "https://connor812.github.io/Space-Quest/",
+    }
+    ,
+    {
+      id:2,
+      name:"project-2-fresh-tomatoes",
+      description:"This was my second project in the bootcamp",
+      image:img2,
+      github: "https://github.com/porteous89/project-2-fresh-tomatoes",
+      deployed: "https://project-2-fresh-tomatoes.herokuapp.com/",
+    },
+    {
+      id:3,
+      name:"My-Profile",
+      description:"This is the first version of my bootcamp portfolio",
+      image:img3,
+      github: "https://github.com/navaulakh24/My-Profile",
+      deployed: "https://navaulakh24.github.io/My-Profile/",
+    },
+    {
+      id:4,
+      name:"PWA-Text-Editor",
+      description:"This was a challenge project in the bootcamp",
+      image:img4,
+      github: "https://github.com/navaulakh24/PWA-Text-Editor",
+      deployed: "https://damp-headland-65466.herokuapp.com/",
+    }
+  ]
+    return(
+        <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
     
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    
-                    <img src="../assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                      <h4>App 1</h4>
-                      <p>App</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                      </div>
-                    </div>
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
     
-                  </div>
-                </div>
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
         
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                      <h4>Web 3</h4>
-                      <p>Web</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                      <h4>App 2</h4>
-                      <p>App</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                      <h4>Card 2</h4>
-                      <p>Card</p>
-                      <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                      </div>
-                    </div>
+          {
+             projects.map((single) => (
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+           
+                <img src={single.image} class="img-fluid" alt="" />
+
+                <div class="portfolio-info">
+                  <h4>{single.name}</h4>
+                  <p>{single.name}</p>
+                  <div class="portfolio-links">
+                    <a href={single.github} target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href={single.deployed} target="_blank" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        )
-        }
+
+))}
+           </div>
+        </div>
+      </section>
+    )
+             }
