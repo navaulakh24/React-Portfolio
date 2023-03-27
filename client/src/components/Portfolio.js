@@ -62,7 +62,7 @@
         
               <div class="section-title">
                 <h2>Portfolio</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p>I am a Full Stack Web Developer who uses technologies such as HTML, CSS, JavaScript, Web 3rd party and Server side APIs, NodeJS, Express, SQL, ORM, MVC, noSQL, PWA, React, MERN, and State as my tech stack.</p>
               </div>
         
               {/* <div class="row" data-aos="fade-up" data-aos-delay="100">

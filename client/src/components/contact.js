@@ -18,7 +18,6 @@ function Contact() {
 
       <div class="section-title">
         <h2>Contact</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
 
       <div class="row mt-5">
@@ -27,13 +26,13 @@ function Contact() {
             <div class="address">
               <i class="bi bi-geo-alt"></i>
               <h4>Location:</h4>
-              <p>A108 john Street, New York, NY 535022</p>
+              <p>Stoney Creek, Ontario, Canada</p>
             </div>
 
             <div class="email">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>info@example.com</p>
+              <p>navdeep_aulakh24@hotmail.com</p>
             </div>
 
             <div class="phone">
