@@ -3,13 +3,22 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import Page from "./components/Page";
+import Header from "./components/Header";
+import Resume from "./components/Resume";
+import About from "./components/about";
+import Contact from "./components/contact";
+import Main from "./components/Main";
 
 const App = () => {
     return (
         <div>
-        <Navigation />
-        <Portfolio />
-        <Footer />
+            <Header />
+            <Main />
+            <About />
+            <Portfolio /> 
+            <Resume />
+            <Contact />
+            <Footer /> 
         </div>
     );
 
@@ -34,3 +43,6 @@ const App = () => {
 };
 
 export default App;
+
+
+

@@ -1,6 +1,14 @@
 import React from 'react';
 import ProjectContainer from './ProjectContainer';
 
+const styles = {
+    container: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      marginTop: '50px'
+    }
+  }
 export default function Project() {
     const projectArray = [
         {
@@ -33,17 +41,15 @@ export default function Project() {
         },
     ];
     return (
-        <div>
-            <div>
-                <h1>Project</h1>
-            </div>
-            {projectArray.map((project) => {
-                return (
-                    <ProjectContainer project={project}/>
-                )
-            }
-
-            )}
-        </div >
-    );
+        <div style={styles.container}>
+          <h1>Project</h1>
+          {projectArray.map((project) => {
+            return (
+              <ProjectContainer project={project} />
+            )
+          })}
+        </div>
+      );
+    
     }
+
