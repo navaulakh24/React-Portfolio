@@ -3,6 +3,8 @@
 ## Description
 This is my personal portfolio I created using React. It is a single page application that allows the user to navigate to different sections of the page. The user can also view my projects and contact me. I used create-react-app to create the application and included many components. I also used react-router-dom to create the navigation bar and the links to the different sections of the page. I used bootstrap to create the layout of the page and styled it using CSS. I also used react-icons to add icons to the page. 
 
+![Webpage](./client/src/assets/img/Screenshot%20(45).png)
+
 ## User Story
 
 ```md
@@ -42,7 +44,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ```
 
 ## Deployed Link
-Click [here](https://jessicamcg.github.io/React-Portfolio/) to view the deployed application.
+Click [here](https://navaulakh24.github.io/React-Portfolio/) to view the deployed application.
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

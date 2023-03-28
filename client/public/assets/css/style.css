@@ -156,7 +156,7 @@ h6 {
 }
 
 .header-social-links a {
-  color: #6f6f6f;
+  color: #fff;
   padding-left: 6px;
   display: inline-block;
   line-height: 0px;
@@ -1281,7 +1281,7 @@ section {
 #footer {
   background: #f056e3a4;
   padding: 30px 0;
-  color: #222222;
+  color: #fff;
   font-size: 14px;
   text-align: center;
 }
